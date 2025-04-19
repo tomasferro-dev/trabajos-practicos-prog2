@@ -3,7 +3,7 @@ public class SalaVIP extends Sala{
 
 
     public SalaVIP(int numero, int capacidad, Cine cine, String beneficios) {
-        super(numero, capacidad, cine);
+        super(numero, capacidad, cine, null);
         this.beneficios = beneficios;
     }
 

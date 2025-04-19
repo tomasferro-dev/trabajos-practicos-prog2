@@ -2,6 +2,7 @@ public class Proveedor {
     private String nombre;
     private String telefono;
     private String direccion;
+    private Compra compra;
 
     public Proveedor(String nombre) {
         this.nombre = nombre;
@@ -29,5 +30,20 @@ public class Proveedor {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public Compra getCompra() {
+        return compra;
+    }
+
+    public void setCompra(Compra compra) {
+        this.compra = compra;
+    }
+
+    @Override
+    public String toString() {
+        return "Proveedor{" +
+                "nombre='" + nombre + '\'' +
+                '}';
     }
 }

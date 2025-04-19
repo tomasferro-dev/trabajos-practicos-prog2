@@ -4,6 +4,9 @@ public class Cine {
     private String nombre;
     private String direccion;
     private ArrayList<Sala> salas;
+    private ArrayList<Pelicula> peliculas = new ArrayList<>();
+    private ArrayList<Compra> compras;
+    private ArrayList<Venta> ventas = new ArrayList<>();
 
     public Cine() {
         this.salas = new ArrayList<>();
@@ -48,12 +51,32 @@ public class Cine {
         return salas;
     }
 
+    public void agregarPelicula(Pelicula p){
+        this.peliculas.add(p);
+    }
+
+    public void agregarCompra(Compra c){
+        if (this.compras == null) {
+            this.compras = new ArrayList<>();
+        }
+        this.compras.add(c);
+    }
+
+    public void agregarVenta(Venta v){
+        this.ventas.add(v);
+    }
+
     @Override
     public String toString() {
         return "Cine{" +
                 "nombre='" + nombre + '\'' +
-                ", salas=" + salas +
+                ", peliculas=" + peliculas +
+                ", compras=" + compras +
                 '}';
+    }
+
+    public String mostrarVentas(){
+        return "Ventas: " + ventas;
     }
 
     public void mostrarSalasPorTipo() {

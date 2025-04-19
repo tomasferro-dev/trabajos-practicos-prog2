@@ -2,5 +2,6 @@ public enum Genero {
     ACCION,
     COMEDIA,
     DRAMA,
-    SUSPENSO
+    SUSPENSO,
+    CIENCIA_FICCION
 }

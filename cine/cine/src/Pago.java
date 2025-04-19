@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+
 public class Pago {
 
     private double monto;
     private TipoPago tipo;
+    private ArrayList<Venta> ventas = new ArrayList<>();
+
 
     public Pago() {
     }
@@ -29,5 +33,9 @@ public class Pago {
 
     public void setTipo(TipoPago tipo) {
         this.tipo = tipo;
+    }
+
+    public void agregarVenta(Venta v){
+        this.ventas.add(v);
     }
 }

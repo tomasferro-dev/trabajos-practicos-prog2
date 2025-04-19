@@ -1,16 +1,11 @@
+import java.util.ArrayList;
 import java.util.SimpleTimeZone;
 
 public class Cliente {
 
     private String nombre;
     private String email;
-
-    public Cliente() {
-    }
-
-    public Cliente(String nombre) {
-        this.nombre = nombre;
-    }
+    private ArrayList<Venta> ventas = new ArrayList<>();
 
     public Cliente(String nombre, String email) {
         this.nombre = nombre;
@@ -31,5 +26,9 @@ public class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public void agregarVenta(Venta v){
+        this.ventas.add(v);
     }
 }
