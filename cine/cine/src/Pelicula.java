@@ -5,12 +5,9 @@ public class Pelicula {
     private String titulo;
     private Genero genero;
     private ArrayList<Funcion> funciones;
-    private final Cine cine;
 
-    public Pelicula(String titulo, Cine cine) {
+    public Pelicula(String titulo) {
         this.titulo = titulo;
-        this.cine = cine;
-        cine.agregarPelicula(this);
     }
 
     public String getTitulo() {

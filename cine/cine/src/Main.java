@@ -53,8 +53,8 @@ public class Main {
 
 
         // Crear la pelicula
-        Pelicula pelicula1 = new Pelicula("Spiderman 3", cinemark);
-        Pelicula pelicula2 = new Pelicula("The Matrix", cinemark);
+        Pelicula pelicula1 = new Pelicula("Spiderman 3");
+        Pelicula pelicula2 = new Pelicula("The Matrix");
         pelicula2.setGenero(Genero.CIENCIA_FICCION);
 
         funcion1.setPelicula(pelicula1);

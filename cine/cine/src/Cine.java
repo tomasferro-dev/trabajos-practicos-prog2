@@ -51,6 +51,11 @@ public class Cine {
         return salas;
     }
 
+    public void crearPelicula(String titulo){
+        Pelicula pelicula = new Pelicula(titulo);
+        this.peliculas.add(pelicula);
+    }
+
     public void agregarPelicula(Pelicula p){
         this.peliculas.add(p);
     }
