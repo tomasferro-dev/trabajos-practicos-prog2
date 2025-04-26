@@ -45,8 +45,8 @@ public class Usuario {
     public String toString() {
         return "Usuario{" +
                 "nombre='" + nombre + '\'' +
-                ", prestamos=" + prestamos +
                 ", reservas=" + reservas +
+                ", prestamos=" + prestamos +
                 '}';
     }
 }

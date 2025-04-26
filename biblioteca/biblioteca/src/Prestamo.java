@@ -13,6 +13,7 @@ public class Prestamo implements InterfazDevolucion {
 
     public Prestamo(String fechaInicio) {
         this.fechaInicio = fechaInicio;
+        this.documentos = new ArrayList<>();
     }
 
     public String getFechaInicio() {
@@ -61,6 +62,7 @@ public class Prestamo implements InterfazDevolucion {
     public String toString() {
         return "Prestamo{" +
                 "fechaInicio='" + fechaInicio + '\'' +
+                "documentos=" + documentos +
                 '}';
     }
 }
